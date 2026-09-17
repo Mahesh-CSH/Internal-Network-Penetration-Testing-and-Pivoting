@@ -46,7 +46,7 @@ Windows 10 Client, and Metasploitable 2.
 			      10.10.10.130
 			      
 		      
-  Methodology   
+  ###Methodology   
 		  
 		  
 			Reconnaissance
@@ -77,7 +77,7 @@ Windows 10 Client, and Metasploitable 2.
 			ProxyChains
 			SMB
 			FTP
-		        SSH
+		    SSH
 			Telnet
 			HTTP
 			MySQL
