@@ -65,5 +65,12 @@ The assessment demonstrates how an attacker can:
                        METASPLOITABLE 2
                          10.10.10.130
 
+###Network Interfaces
 
+| System           | Interface | IP Address     | Role            |
+| ---------------- | --------- | -------------- | --------------- |
+| Kali Linux       | NAT       | 192.168.88.129 | Attacker        |
+| Windows 10       | NAT       | 192.168.88.136 | Pivot Host      |
+| Windows 10       | Internal  | 10.10.10.128   | Internal Access |
+| Metasploitable 2 | Internal  | 10.10.10.130   | Target          |
 
