@@ -88,8 +88,8 @@ Technical Reporting
                                 ▼
                     ┌────────────────────────┐
                     │    METASPLOITABLE 2    │
-                    │    INTERNAL TARGET      │
-                    │    10.10.10.130         │
+                    │    INTERNAL TARGET     │
+                    │    10.10.10.130        │
                     └────────────────────────┘
     
 
@@ -101,8 +101,8 @@ Technical Reporting
 
 | System           | Network  | IP Address       | Role                   |
 | ---------------- | -------- | ---------------- | ---------------------- |
-| Kali Linux       | NAT      | `192.168.xx.xx` | Attacker               |
-| Windows 10       | NAT      | `192.168.xx.xx` | Pivot host             |
+| Kali Linux       | NAT      | `192.168.xx.xx`  | Attacker               |
+| Windows 10       | NAT      | `192.168.xx.xx`  | Pivot host             |
 | Windows 10       | Internal | `10.10.10.128`   | Internal gateway/pivot |
 | Metasploitable 2 | Internal | `10.10.10.130`   | Internal target        |
 
@@ -151,50 +151,8 @@ Kali was configured without direct access to the internal 10.10.10.0/24 network 
 
 This allowed the project to demonstrate genuine access to the internal network through the compromised Windows pivot host rather than simply communicating directly with Metasploitable 2.
 
-### 🔀 Attack Path
 
-The central technical objective of this project was to demonstrate an internal attack path.
 
-```text
-
-┌───────────────┐
-│   Kali Linux  │
-│    Attacker   │
-└───────┬───────┘
-        │
-        │ Initial Access
-        ▼
-┌──────────────────────┐
-│     Windows 10       │
-│     Pivot Host       │
-│  192.168.88.136      │
-└──────────┬───────────┘
-           │
-           │ Meterpreter
-           │ Routing
-           │ SOCKS Proxy
-           │ ProxyChains
-           ▼
-┌──────────────────────┐
-│  Internal Network    │
-│    10.10.10.0/24     │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│   Metasploitable 2   │
-│    10.10.10.130      │
-└──────────┬───────────┘
-           │
-     ┌─────┼───────────────┐
-     │     │               │
-     ▼     ▼               ▼
-    SMB   Java RMI     PostgreSQL
-     │     │               │
-     ▼     ▼               ▼
-    RCE  Meterpreter     Database
-
-```
 ### 🧭 Assessment Methodology
 
 1. Reconnaissance
