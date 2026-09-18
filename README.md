@@ -323,30 +323,27 @@ were successfully accessed and enumerated through the pivot.
 
 ### 💡 Skills Demonstrated
 
-```text
+ - Internal Network Penetration Testing
+ - Network Reconnaissance
+ - Port Scanning
+ - Service Enumeration
+ - Vulnerability Assessment
+ - Exploitation
+ - Metasploit Framework
+ - Meterpreter
+ - Windows Security Assessment
+ - Linux Security Assessment
+ - SMB Security
+ - Web Security
+ - Database Security
+ - Network Pivoting
+ - SOCKS Proxy
+ - ProxyChains
+ - Lateral Movement Concepts
+ - Evidence Collection
+ - Security Reporting
+ - Remediation Planning
 
-Internal Network Penetration Testing
-Network Reconnaissance
-Port Scanning
-Service Enumeration
-Vulnerability Assessment
-Exploitation
-Metasploit Framework
-Meterpreter
-Windows Security Assessment
-Linux Security Assessment
-SMB Security
-Web Security
-Database Security
-Network Pivoting
-SOCKS Proxy
-ProxyChains
-Lateral Movement Concepts
-Evidence Collection
-Security Reporting
-Remediation Planning
-
-```
 ### ⚠️ Disclaimer
 
 This project was performed exclusively in an isolated, authorized laboratory environment using intentionally vulnerable systems.
